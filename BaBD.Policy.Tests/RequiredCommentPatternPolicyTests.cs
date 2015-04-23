@@ -12,6 +12,7 @@ namespace BaBD.Policy.Tests
             using (RequiredCommentPatternPolicy policy = new RequiredCommentPatternPolicy())
             {
                 Assert.IsTrue(policy.CommentMatchesPattern("Task-123 Comment"));
+                Assert.IsTrue(policy.CommentMatchesPattern("task-123 Comment"));
 
                 Assert.IsFalse(policy.CommentMatchesPattern("task123"));
                 Assert.IsFalse(policy.CommentMatchesPattern("task-"));

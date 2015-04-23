@@ -13,7 +13,7 @@ namespace BaBD.Policy
     {
         [NonSerialized]
         private IPendingCheckin mPendingCheckin;
-        Regex mCommentPattern = new Regex("Task-[0-9]+ .+");
+        Regex mCommentPattern = new Regex("Task-[0-9]+ .+", RegexOptions.IgnoreCase | RegexOptions.Compiled | RegexOptions.Multiline);
 
         public override bool CanEdit
         {
