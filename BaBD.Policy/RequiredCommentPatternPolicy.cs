@@ -13,7 +13,7 @@ namespace BaBD.Policy
     {
         [NonSerialized]
         private IPendingCheckin mPendingCheckin;
-        Regex mCommentPattern = new Regex("Task-[0-9] .+");
+        Regex mCommentPattern = new Regex("Task-[0-9]+ .+");
 
         public override bool CanEdit
         {
@@ -66,7 +66,10 @@ namespace BaBD.Policy
         public override void Dispose()
         {
             base.Dispose();
-            mPendingCheckin.PendingChanges.CheckedPendingChangesChanged -= PendingChanges_CheckedPendingChangesChanged;
+            if (mPendingCheckin != null)
+            {
+                mPendingCheckin.PendingChanges.CheckedPendingChangesChanged -= PendingChanges_CheckedPendingChangesChanged;
+            }
         }
 
         public override PolicyFailure[] Evaluate()
