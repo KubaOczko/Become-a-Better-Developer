@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="BaBD.16c23cb8-01f5-4bd6-98f8-9bdb6db506de" Version="1.0" Language="en-US" Publisher="Jakub Oczko" />
+    <DisplayName>Become a Better Developer</DisplayName>
+    <Description xml:space="preserve">.</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset d:Source="File" Path="policies.pkgdef" Type="Microsoft.VisualStudio.VsPackage" />
+  </Assets>
+</PackageManifest>

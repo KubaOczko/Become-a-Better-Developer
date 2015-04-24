@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
@@ -6,6 +5,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaBD.PolicyPack", "BaBD.Policy\BaBD.PolicyPack.csproj", "{8057D500-1C07-40E8-A9DE-7E78122DD336}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaBD.PolicyPack.Tests", "BaBD.Policy.Tests\BaBD.PolicyPack.Tests.csproj", "{CD7D6B53-20F5-4097-BE08-CBC43C4D6AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSIXPackage", "VSIXPackage\VSIXPackage.csproj", "{7FA424B5-B548-425B-8C15-B6BCB75D2B68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +22,10 @@ Global
 		{CD7D6B53-20F5-4097-BE08-CBC43C4D6AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD7D6B53-20F5-4097-BE08-CBC43C4D6AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD7D6B53-20F5-4097-BE08-CBC43C4D6AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA424B5-B548-425B-8C15-B6BCB75D2B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA424B5-B548-425B-8C15-B6BCB75D2B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA424B5-B548-425B-8C15-B6BCB75D2B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA424B5-B548-425B-8C15-B6BCB75D2B68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
