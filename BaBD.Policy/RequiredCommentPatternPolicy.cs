@@ -23,7 +23,7 @@ namespace BaBD.Policy
 
         public override string Description
         {
-            get { return "The policy forces users to remove warnings."; }
+            get { return "The policy forces users to follow the required comment pattern."; }
         }
 
         public override string InstallationInstructions
@@ -33,12 +33,12 @@ namespace BaBD.Policy
 
         public override string Type
         {
-            get { return "No-Warning Policy"; }
+            get { return "Comment Pattern Policy"; }
         }
 
         public override string TypeDescription
         {
-            get { return "This policy does not allow commit a code without empty warning list."; }
+            get { return "The policy forces users to follow the required comment pattern."; }
         }
 
         public override bool Edit(IPolicyEditArgs policyEditArgs)
